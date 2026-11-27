@@ -14,6 +14,20 @@
 1. เปิด Terminal และเข้าไปที่โฟลเดอร์แบบฝึกหัดที่ 1:
    ```bash
    cd exercise-1
+   ```
+2. สั่งรันคอนเทนเนอร์ทั้งหมดผ่าน Docker Compose:
+   ```bash
+   docker-compose up --build
+   ```
+3. การเข้าใช้งาน Client:
+   - เปิด Terminal ใหม่เพื่อเข้าคอนเทนเนอร์ Client 1:
+     ```bash
+     docker exec -it chat_client1 python client.py
+     ```
+   - เปิด Terminal ใหม่เพื่อเข้าคอนเทนเนอร์ Client 2:
+     ```bash
+     docker exec -it chat_client2 python client.py
+     ```
    
 <img width="1211" height="321" alt="Screenshot 2026-11-27 115219" src="https://github.com/user-attachments/assets/0eb60208-89ad-4e16-b9e9-a9c113f89e20" />
 <img width="662" height="275" alt="Screenshot 2026-11-27 115236" src="https://github.com/user-attachments/assets/b55ea80c-e0cd-44fb-82bf-7150907ec9fd" />
