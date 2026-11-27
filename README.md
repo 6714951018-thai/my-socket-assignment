@@ -33,3 +33,33 @@
 <img width="662" height="275" alt="Screenshot 2026-11-27 115236" src="https://github.com/user-attachments/assets/b55ea80c-e0cd-44fb-82bf-7150907ec9fd" />
 <img width="715" height="287" alt="Screenshot 2026-11-27 115226" src="https://github.com/user-attachments/assets/7ae52f36-d45c-438a-805b-4db8924473b9" />
 
+## 🌐 แบบฝึกหัดที่ 2: เว็บแอปพลิเคชัน Flask และ Socket Server
+
+### คำอธิบายการทำงาน
+แอปพลิเคชันหน้าเว็บพัฒนาด้วย Flask รับข้อความผ่านการกดส่งฟอร์ม (POST Method) จากนั้น Flask จะทำหน้าที่เป็น Client ส่งข้อความนั้นต่อไปยัง Socket Server เพื่อทำการสะท้อนข้อมูลกลับ (Echo) และแสดงผลบนหน้าเว็บ
+
+### ขั้นตอนการเริ่มทำงาน (How to run)
+1. เปิด Terminal และเข้าไปที่โฟลเดอร์แบบฝึกหัดที่ 2:
+   ```bash
+   cd exercise-2
+   ```
+2. สั่งรัน Docker Compose:
+   ```bash
+   docker-compose up --build
+   ```
+3. เปิดเว็บเบราว์เซอร์ไปที่ลิงก์ `http://localhost:5000` เพื่อทดสอบส่งข้อความ
+
+### การหยุดการทำงาน
+กด `Ctrl+C` ใน Terminal ที่รันอยู่ แล้วลบคอนเทนเนอร์ด้วย:
+```bash
+docker-compose down
+```
+
+<img width="1917" height="967" alt="Screenshot 2026-11-27 120155" src="https://github.com/user-attachments/assets/daa22efa-098a-4586-b35e-ed9ac26eb4f1" />
+
+## 🧹 วิธีการหยุดการทำงานและเคลียร์ Resources (สำหรับทั้งสองแบบฝึกหัด)
+
+ใช้คำสั่งนี้ในโฟลเดอร์ที่มีไฟล์ `docker-compose.yml`:
+```bash
+docker-compose down
+```
